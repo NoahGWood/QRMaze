@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1645682822010579465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645682822010579462}
+  - component: {fileID: 1645682822010579460}
+  - component: {fileID: 1645682822010579463}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1645682822010579462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645682822010579465}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645682822010579460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645682822010579465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b153f159c54ab6233a77d4d439ce31a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showDebug: 1
+  floorMat: {fileID: 2100000, guid: 41ad0cb33754e5c96b29784a12085ca4, type: 2}
+  wallMat: {fileID: 2100000, guid: 28fe58ee764e5e542badc6824f4e0a94, type: 2}
+  wallWidth: 3.75
+  wallHeight: 3.5
+  placementThreshold: 0.392
+  startCol: 0
+  startRow: 0
+--- !u!114 &1645682822010579463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645682822010579465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d1afa9e2fe9ee6258d0e7cf8ff54b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 9192026697759257661, guid: 81f41adc5098679f4b28c03697c5592b, type: 3}
+  startObject: {fileID: 6905900961441106454, guid: 3501fcc70fef7f4f6a1bca3beadcb1a2, type: 3}
+  goalObject: {fileID: 1315233831394361072, guid: 76d3416df6b41ab67a786afd32930d26, type: 3}
+  goalReached: 0
+  score: 0
+  scoreLabel: {fileID: 0}
+  mazeWidth: 11
+  mazeHeight: 15
